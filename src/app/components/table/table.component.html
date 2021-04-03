@@ -1,0 +1,30 @@
+<table>
+  <thead>
+    <tr>
+      <th>
+        <a (click)="sortBy('name')">Product Name</a>
+        <i *ngIf="sortOptions['name']['order'] === 'desc'" class="sort-by-desc" [ngClass]="getActiveClass('name')"></i>
+        <i *ngIf="sortOptions['name']['order'] == 'asc'" class="sort-by-asc" [ngClass]="getActiveClass('name')"></i>
+      </th>
+      <th>
+        <a (click)="sortBy('price')">Price</a>
+        <i *ngIf="sortOptions['price']['order'] === 'desc'" class="sort-by-desc"
+          [ngClass]="getActiveClass('price')"></i>
+        <i *ngIf="sortOptions['price']['order'] == 'asc'" class="sort-by-asc" [ngClass]="getActiveClass('price')"></i>
+      </th>
+      <th>
+        <a (click)="sortBy('category')">Category</a>
+        <i *ngIf="sortOptions['category']['order'] === 'desc'" class="sort-by-desc"
+          [ngClass]="getActiveClass('category')"></i>
+        <i *ngIf="sortOptions['category']['order'] === 'asc'" class="sort-by-asc"
+          [ngClass]="getActiveClass('category')"></i></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td data-column="Product Name">{{product.name}}</td>
+      <td data-column="Price">{{product.price}}</td>
+      <td data-column="Category">{{product.category}}</td>
+    </tr>
+  </tbody>
+</table>

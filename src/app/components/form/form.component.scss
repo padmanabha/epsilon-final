@@ -1,0 +1,93 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+  padding: 0px;
+}
+
+.container label{
+  font-size: 12px;
+
+}
+
+#register {
+  width: 100%;
+  padding: 40px 40px 20px 40px;
+  border: 1px solid lightgray;
+}
+
+
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0  20px 0px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#register input[type="text"],
+#register input[type="email"],
+#register input[type="tel"],
+#register input[type="password"],
+#register textarea {
+  width: 100%;
+  border: 1px solid #7A8594;
+  background: #FFF;
+ 
+  padding: 9px;
+  opacity: 0.5
+}
+
+#register input[type="text"]:hover,
+#register input[type="email"]:hover,
+#register input[type="tel"]:hover,
+#register input[type="url"]:hover,
+#register textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+
+
+#register button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #0f5ef0;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#register button[type="submit"]:hover {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #0C4BC0;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.pt-10{
+  padding-top: 10px;
+}
