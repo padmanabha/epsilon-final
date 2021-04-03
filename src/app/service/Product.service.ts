@@ -13,7 +13,7 @@ export class ProductService {
 constructor(private http: HttpClient) { }
 getProducts(): Observable<any> {
  
-  let url = 'http://usweb.dotomi.com/resources/swfs/cookies.json';
+  let url = 'https://raw.githubusercontent.com/padmanabha/epsilon-final/master/data.json';
   return this.http.get<any>(url);
 }
 }
