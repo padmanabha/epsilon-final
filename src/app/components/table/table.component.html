@@ -1,3 +1,4 @@
+<h5><i>*Click on the column name to sort</i></h5>
 <table>
   <thead>
     <tr>
@@ -17,7 +18,8 @@
         <i *ngIf="sortOptions['category']['order'] === 'desc'" class="sort-by-desc"
           [ngClass]="getActiveClass('category')"></i>
         <i *ngIf="sortOptions['category']['order'] === 'asc'" class="sort-by-asc"
-          [ngClass]="getActiveClass('category')"></i></th>
+          [ngClass]="getActiveClass('category')"></i>
+      </th>
     </tr>
   </thead>
   <tbody>
